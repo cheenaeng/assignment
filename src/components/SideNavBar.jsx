@@ -14,7 +14,7 @@ function SideNavBar() {
   return (
     <Stack className={styles.navbar} alignContent="space-between" justifyContent="space-between">
       <Stack alignContent="space-between" justifyContent="space-between" mt={3}>
-        <Stack spacing={3}>
+        <Stack spacing={1}>
           <NavLink
             to="/"
             style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -27,7 +27,7 @@ function SideNavBar() {
                 className={
                   isActive ? activeClassName : undefined
                 }
-                p={2}
+                p={3}
               >
                 <img src="../../sideBarIcons/Vector.svg" alt="whale" />
               </Box>
@@ -40,7 +40,7 @@ function SideNavBar() {
                 className={
                   isActive ? activeClassName : undefined
                 }
-                p={2}
+                p={3}
               >
                 <img src="../../sideBarIcons/Vector-1.svg" alt="whale" />
               </Box>
@@ -49,7 +49,7 @@ function SideNavBar() {
           <NavLink to="profile">
             {({ isActive }) => (
               <Box
-                p={2}
+                p={3}
                 className={
                   isActive ? activeClassName : undefined
                 }
@@ -61,7 +61,7 @@ function SideNavBar() {
           <NavLink to="stats">
             {({ isActive }) => (
               <Box
-                p={2}
+                p={3}
                 className={
                   isActive ? activeClassName : undefined
                 }
@@ -76,7 +76,7 @@ function SideNavBar() {
         <NavLink to="help">
           {({ isActive }) => (
             <Box
-              p={2}
+              p={3}
               className={
                   isActive ? activeClassName : undefined
                 }
