@@ -1,0 +1,54 @@
+.navbar {
+  background-color: #042235;
+  position: fixed;
+  left: 0%;
+  right: 94.73%;
+  top: 0%;
+  bottom: 0%;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.5),
+    inset -4px 0px 4px rgba(2, 15, 24, 0.569466);
+}
+
+.navbar li {
+  list-style: none;
+}
+
+/* top navbar */
+.top-nav-bar-container {
+  box-shadow: 0px 1px 0px #e2e2e2, 0px 0px 4px rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #ffffff;
+}
+.narwhal-border {
+  border-right: 1px solid #e2e2e2;
+}
+.top-nav-bar-middle {
+  background-color: #ffffff;
+}
+
+.teambtn {
+  background-color: #40d2bf !important;
+  box-shadow: none !important;
+}
+
+.teambtn:hover {
+  background-color: #2e978a;
+}
+
+.mainContainer {
+  display: flex;
+}
+.navbar img {
+  width: 25px;
+  height: 25px;
+}
+.whaleIcon {
+  width: 40px !important;
+}
+.navbarContainer {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}

@@ -5,9 +5,35 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Proxima-Nova';
+  background-color: #f1f4f8;
+}
+* {
+  font-family: 'Proxima-Nova';
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@font-face {
+  font-family: 'Proxima-Nova';
+  src: local('Proxima-Nova'),
+    url('./fonts/Proxima-Nova-Font.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Proxima-Nova-Bold';
+  src: local('Proxima-Nova-Bold'),
+    url('./fonts/Proxima-Nova-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+.active-link {
+  background-color: #2895da;
+}
+
+.active-link img {
+  color: white;
 }
