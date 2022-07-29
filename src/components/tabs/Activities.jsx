@@ -12,8 +12,8 @@ import data from '../../data';
 export default function Activities() {
   return (
     <>
-      <Box p={1}>
-        <Typography>Activity</Typography>
+      <Box p={2}>
+        <Typography fontSize="18px" textAlign="left" fontWeight="bold">Activity</Typography>
       </Box>
       <Divider />
       <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
@@ -23,13 +23,14 @@ export default function Activities() {
               <Avatar alt="Remy Sharp" src={activity.person.avatar} />
             </ListItemAvatar>
             <ListItemText
-              primary={`${activity.person.name} ${activity.action.split('_')[0]} ${activity.target} ${activity.action.split('_')[1]}`}
+              primary={`${activity.person.name} ${activity.action.split('_')[0]} ${activity.target} ${activity.action.split('_')[1]}.`}
               secondary={(
                 <Typography
                   sx={{ display: 'inline' }}
                   component="span"
                   variant="body2"
-                  color="text.primary"
+                  color="#565656"
+                  fontSize="13px"
                 >
                   {activity.created_at}
                 </Typography>
