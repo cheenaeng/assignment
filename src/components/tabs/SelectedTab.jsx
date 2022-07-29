@@ -20,10 +20,12 @@ function SelectedTab({ selectedData, title }) {
           out of
           {' '}
           {selectedData.length}
+          {' '}
+          teams
         </Typography>
       </Stack>
       <Divider />
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} mt={2}>
+      <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} mt={2}>
         {selectedData.map((team) => (
           <Grid item xs={4}>
             <Box className={styles['team-card']}>
@@ -54,15 +56,23 @@ function SelectedTab({ selectedData, title }) {
                 {team.description}
               </Box>
               <Stack direction="row" spacing={2} className={styles['icon-companies-bottom']}>
+                <Stack direction="row">
+                  <img src="../../sideBarIcons/Vector.svg" alt="icon" className={styles['icon-bottom']} />
+                  <Typography fontSize="13px" lineHeight="16px">
+                    {team.campaigns_count}
+                    {' '}
+                    Campaigns
+                  </Typography>
+                </Stack>
                 <Box>
-                  {team.campaigns_count}
-                  {' '}
-                  Campaigns
-                </Box>
-                <Box>
-                  {team.leads_count}
-                  {' '}
-                  Leads
+                  <Stack direction="row">
+                    <img src="../../sideBarIcons/Vector-2.svg" alt="icon" className={styles['icon-bottom']} />
+                    <Typography fontSize="13px" lineHeight="16px">
+                      {team.leads_count}
+                      {' '}
+                      Leads
+                    </Typography>
+                  </Stack>
                 </Box>
               </Stack>
             </Box>

@@ -12,7 +12,7 @@ import data from '../../data';
 export default function Activities() {
   return (
     <>
-      <Box p={2}>
+      <Box p={3}>
         <Typography fontSize="18px" textAlign="left" fontWeight="bold">Activity</Typography>
       </Box>
       <Divider />
@@ -23,7 +23,7 @@ export default function Activities() {
               <Avatar alt="Remy Sharp" src={activity.person.avatar} />
             </ListItemAvatar>
             <ListItemText
-              primary={`${activity.person.name} ${activity.action.split('_')[0]} ${activity.target} ${activity.action.split('_')[1]}.`}
+              primary={`${activity.person.name} ${activity.action.split('_')[0]} ${activity.action.split('_')[1]} ${activity.target}.`}
               secondary={(
                 <Typography
                   sx={{ display: 'inline' }}
